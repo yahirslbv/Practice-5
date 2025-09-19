@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario con Validaciones</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="form-container">
+        <form id="contactForm" novalidate>
+            <h2>Formulario de contacto</h2>
+            <div class="form-group">
+                <label for="name">Nombre:</label>
+                <input type="text" id="name" name="name" required>
+                <span class="error" id="nameError"></span>
+            </div>
+            <div class="form-group">
+                <label for="email">Correo electrónico:</label>
+                <input type="email" id="email" name="email" required>
+                <span class="error" id="emailError"></span>
+            </div>
+            <div class="form-group">
+                <label for="phone">Número de teléfono:</label>
+                <input type="tel" id="phone" name="phone" required maxlength="10">
+                <span class="error" id="phoneError"></span>
+            </div>
+            <button type="submit">Enviar</button>
+        </form>
+    </div>
+    <script src="validacion-form.js"></script>
+</body>
+</html>
